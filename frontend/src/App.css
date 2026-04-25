@@ -142,7 +142,8 @@
 
 .status-badge,
 .room-chip,
-.toolbar-pill {
+.toolbar-pill,
+.download-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -157,6 +158,25 @@
   color: #334155;
   background: #f8fafc;
   border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.download-button {
+  border: 1px solid rgba(20, 33, 61, 0.12);
+  color: #ffffff;
+  background: #14213d;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.download-button:hover {
+  background: #1f315c;
+  box-shadow: 0 12px 24px rgba(20, 33, 61, 0.18);
+  transform: translateY(-1px);
+}
+
+.download-button:focus-visible {
+  outline: 3px solid rgba(90, 136, 255, 0.35);
+  outline-offset: 2px;
 }
 
 .status-badge.online {
