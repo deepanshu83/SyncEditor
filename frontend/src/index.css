@@ -1,11 +1,26 @@
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  background: #eef2f7;
-  color: #111;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;600;700&display=swap');
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(246, 189, 96, 0.18), transparent 28%),
+    radial-gradient(circle at 85% 20%, rgba(90, 136, 255, 0.14), transparent 26%),
+    linear-gradient(180deg, #fffaf2 0%, #f3f6fb 45%, #eef2f7 100%);
+  color: #0f172a;
+  font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
 }
